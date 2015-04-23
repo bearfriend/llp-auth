@@ -1,0 +1,14 @@
+{
+  "name": "binder-sso",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0",
+    "polymer": "Polymer/polymer#~0.4.2",
+    "pl-sign-in": "https://github.com/bearfriend/pl-sign-in.git",
+    "pl-config": "https://github.com/bearfriend/pl-config.git",
+    "pl-sign-up": "https://github.com/bearfriend/pl-sign-up.git",
+    "pl-forgot-pw": "https://github.com/bearfriend/pl-forgot-pw.git"
+  },
+  "devDependencies": {}
+}

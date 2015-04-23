@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>binder sso</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+		
+        <!-- build:js scripts/vendor/platform.js -->
+		<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+		<!-- endbuild -->
+		
+		<link rel="import" href="elements.html" />
+
+		<!--
+		<script src="//use.typekit.net/bee8rdg.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		-->
+
+		<script>
+		  /*
+		  addEventListener('scroll',function(){
+		  var el=document.querySelectorAll('html, body').array(),
+		  max=Math.max(screen.availHeight,parseInt((el[0].style.minHeight || 0),10));
+		  el.forEach(function(el){el.style.height=max+'px';});
+		  }); */
+		</script>
+		
+    </head>
+    <body layout vertical>
+      <!--[if lt IE 10]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+	  <div id="logo" self-center></div>
+	  <div flex relative>
+		<div id="sign-in" layout horizontal center-justified self-start class="page inactive" fit>
+		  <pl-sign-in></pl-sign-in>
+		</div>
+		<div id="sign-up" layout horizontal center-justified self-start class="page inactive" fit>
+		  <pl-sign-up marketing></pl-sign-up>
+		</div>
+		<div id="forgot-pw" layout horizontal center-justified self-start class="page inactive" fit>
+		  <pl-forgot-pw></pl-forgot-pw>
+		</div>
+	  </div>
+	  
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+	  
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+	  
+      <!-- build:js scripts/main.js -->
+      <script src="scripts/main.js"></script>
+      <!-- endbuild -->
+	</body>
+</html>
